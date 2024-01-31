@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <title>Formulário de Cadastro de análises</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/img/cadastro2.svg" alt="imagem tela cadastro de análises">
+            </div>
+            <div class="form">
+
+                <div class="img-logo">
+                    <img src="assets/img/logo.jpg" alt="imagem tela cadastro de análises">
+                </div>
+                <form action="#" id="form-analise">
+                    <div class="form-header">
+
+                        <div class="title">
+                            <h1>Análise do secador 01</h1>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="umidade">Umidade da Análise</label>
+                        <input id="umidadeS01" type="text" name="umidade" placeholder="Digite o valor da umidade">
+
+                        <label for="perca">Perca em processo</label>
+                        <input id="percaS01" type="text" name="perca" placeholder="Digite o valor da perca">
+
+                    </div>
+                    <div class="button-group">
+                        <div class="button-box">
+
+                            <div class="salvar-button">
+                                <button onclick="salvarAnaliseS01()"><a href="#">SALVAR</a></button>
+                            </div>
+                            <div class="salvar-button">
+                                <button data-bs-toggle="modal" data-bs-target="#modalAnalise"><a
+                                        href="#">PESQUISAR</a></button>
+                            </div>
+                            <div class="salvar-button">
+                                <button><a href="/index.htm">TELA INICIAL</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="modalAnalise" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Pesquisa de Análises</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="analiseBusca" class="form-label">Digite a data da Análise</label>
+                                <input type="text" id="analiseBusca" class="form-control"
+                                    data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy"
+                                    placeholder="DIGITE A DATA DD/MM/AAAA" />
+                                <small class="text-muted">e.g "DD/MM/YYYY"</small>
+                            </div>
+                            <button type="button" class="btn btn-success" onclick="buscarAnaliseS01()">BUSCAR</button>
+                        </form>
+                        <table class="table" id="tabelaResultados">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">UMIDADE</th>
+                                    <th scope="col">PERCA</th>
+                                    <th scope="col">DATA</th>
+                                    <th scope="col">ATUALIZAR</th>
+                                    <th scope="col">DELETAR</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">FECHAR</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

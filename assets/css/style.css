@@ -1,0 +1,377 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6eaa69;
+    
+}
+
+.container{
+    width: 70%;
+    height: 85vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.212);
+    
+   
+}
+
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(27,140,18);
+    background: linear-gradient(90deg, rgba(27,140,18,1) 21%, rgba(147,236,140,1) 100%);
+    border-radius: 10px;
+}
+
+.form-image img {
+    margin-top: 18rem;
+    width: 50rem;
+    margin-left: 0.5rem;
+
+
+}
+.img-logo img{
+    width: 20rem;  
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.form-analise {
+    width: 100%;
+    display: flex;   
+    align-items: center;
+    flex-direction: column;    
+}
+
+
+
+
+
+.salvar-button {
+    display: flex;
+    align-items: center;
+}
+
+.cadS01-button{
+    display: flex;   
+    margin-top: 3rem;
+}
+
+.buscar-button {
+    display: flex;
+    align-items: center;
+}
+
+.salvar-button button {
+    width: 12rem;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: gold;
+    padding: 0.62rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.cadS01-button button{
+    margin-top: 1.5rem;
+    width: 12rem;
+    border: none;
+    background-color: gold;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1rem ;
+    margin-right: 1cqmin;
+    
+}
+
+.salvar-button button:hover {
+    background-color: goldenrod;
+}
+
+.cadS01-button button:hover{
+    background-color: goldenrod;
+}
+
+.salvar-button button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;  
+}
+.cadS01-button button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green; 
+}
+
+
+.pesquisa-button {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa-button button {
+    
+    margin-top: 1.5rem;
+    border: none;
+    background-color: gold;
+    padding: 0.62rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+
+.pesquisa-button button:hover {
+    background-color: goldenrod;
+}
+
+.pesquisa-button button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;  
+
+}
+
+.proximo-button {
+    display: flex;
+    align-items: center;
+}
+
+.proximo-button button {
+    
+    margin-top: 1.5rem;
+    border: none;
+    background-color: gold;
+    padding: 0.62rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+
+.proximo-button button:hover {
+    background-color: goldenrod;
+}
+
+.proximo-button button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;  
+
+}
+
+.form-header{
+    margin-left: 6rem;
+    
+
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 26.5rem;
+    height: 0.3rem;
+    background-color: #1b8c12;
+    margin: o auto;
+    position: absolute;
+    border-radius: 10px;
+    
+
+}
+
+.form-header-tl1 h1::after{
+    content: '';
+    display: block;
+    width: 21.5rem;
+    height: 0.3rem;
+    background-color: #1b8c12;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    justify-content: center;
+}
+.form-header-tl2 h1::after{
+    content: '';
+    display: block;
+    width: 27.5rem;
+    height: 0.3rem;
+    background-color: #1b8c12;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.form-header-tl1{
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+.form-header-tl2{
+    margin-left: 2rem;
+}
+
+
+.form-analise{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-group {
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.1rem;
+}
+
+.button-box {
+    display: flex;
+    width: 100%;
+    
+    margin-bottom: 1rem;
+
+}
+
+.button-box-tl {
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    
+}
+
+.input-group input {
+    margin: 0.6rem;
+    padding: .8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px black;  
+    margin-left: 1.5rem;
+
+}
+
+.input-group input:hover {
+    background-color: rgb(214, 208, 208);
+
+}
+
+.input-group input:focus-visible{
+    outline: 1px solid lightgreen;
+}
+
+.input-group label{
+    
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .form-image{display: none;
+    }
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow: scroll;
+        
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+.cadS01-button{
+    flex-direction: column;
+}
+   
+
+}
+.table table{
+    overflow: scroll;
+}
+
+@media screen and (max-width: 415px) {
+
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .button-box-tl {
+        display: flex;
+        width: 100%;    
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .form-header-tl1 h1::after{
+        content: '';
+        display: block;
+        width: 15rem;
+        height: 0.3rem;
+        background-color: #1b8c12;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .form-header-tl1{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+        .input-group{
+            flex-direction: column;
+            align-items: center;
+        }
+}

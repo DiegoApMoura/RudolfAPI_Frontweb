@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="110" >
+    
+    <link rel="stylesheet" href="/assets/css/resultStyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="resultScript.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div-container" class="container">
+        <div id="div-S01" class="div-S01">
+            <div class="header-S01">
+                Análise Secador 01
+            </div>
+            <div id="body-S01" class="body-S01">
+                
+            </div>
+            <button id="button-refresh-S01" class="button-refresh-S01" onclick="carregaS01()"><a href="#">REFRESH</a></button>
+        </div>
+        <div id="div-S02" class="div-S02">
+            <div class="header-S02">
+                Análise Secador 02
+            </div>
+            <div id="body-S02" class="body-S02">
+
+            </div>
+            <button id="button-refresh-S02" class="button-refresh-S02" onclick="carregaS02()"><a href="#">REFRESH</a></button>
+        </div>
+    </div>
+</body>
+<script >
+    $(window).on("load", function(){
+   // página totalmente carregada (DOM, imagens etc.)
+   carregaS01();
+   carregaS02();
+});
+</script>
+
+</html>
